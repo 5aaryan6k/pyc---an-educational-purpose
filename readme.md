@@ -1,4 +1,3 @@
-Yes. Below is the entire README as plain Markdown text, with no writing-block wrapper, so you can copy everything directly into `README.md`.
 
 ````markdown
 # PYC Blockchain - Educational Cryptocurrency System
