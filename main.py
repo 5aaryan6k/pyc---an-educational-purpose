@@ -10,6 +10,7 @@ from config import (
 )
 
 from core.blockchain import Blockchain
+
 from core.crypto import (
     hash_password,
     verify_password,
@@ -56,6 +57,79 @@ class PYCApplication:
         self.login_password = None
 
     # =====================================================
+    # Educational Warning
+    # =====================================================
+
+    def show_warning(self):
+
+        print()
+        print("=" * 60)
+        print("⚠️  WARNING — EDUCATIONAL USE ONLY")
+        print("=" * 60)
+
+        print()
+
+        print(
+            "PYC Blockchain is an educational cryptocurrency"
+        )
+
+        print(
+            "and blockchain prototype developed for learning,"
+        )
+
+        print(
+            "research, testing, and demonstration purposes."
+        )
+
+        print()
+
+        print(
+            "PYC is NOT a real cryptocurrency."
+        )
+
+        print(
+            "PYC has NO real-world monetary value."
+        )
+
+        print(
+            "This system is NOT a production financial system."
+        )
+
+        print()
+
+        print(
+            "Do NOT use this software for real financial"
+        )
+
+        print(
+            "transactions or store real funds or sensitive"
+        )
+
+        print(
+            "financial information in this application."
+        )
+
+        print()
+
+        print(
+            "This project is provided AS-IS for educational"
+        )
+
+        print(
+            "and experimental purposes only."
+        )
+
+        print()
+
+        print("=" * 60)
+
+        input(
+            "Press Enter to acknowledge and continue..."
+        )
+
+        print()
+
+    # =====================================================
     # Persistence
     # =====================================================
 
@@ -79,6 +153,21 @@ class PYCApplication:
         print("=" * 60)
         print("CREATE PYC ACCOUNT")
         print("=" * 60)
+
+        print()
+        print(
+            "NOTE: PYC provided during registration is"
+        )
+
+        print(
+            "simulated educational cryptocurrency."
+        )
+
+        print(
+            "It has no real-world monetary value."
+        )
+
+        print()
 
         username = (
             input("Username: ")
@@ -162,22 +251,52 @@ class PYCApplication:
         self.save_blockchain()
 
         print()
-        print("Account successfully created.")
-        print()
-        print("Username:")
-        print(username)
+        print("=" * 60)
+        print("✓ ACCOUNT SUCCESSFULLY CREATED")
+        print("=" * 60)
 
         print()
-        print("Wallet address:")
-        print(wallet.address)
+
+        print(
+            "Username:"
+        )
+
+        print(
+            username
+        )
 
         print()
-        print("Initial PYC balance:")
+
+        print(
+            "Wallet address:"
+        )
+
+        print(
+            wallet.address
+        )
+
+        print()
+
+        print(
+            "Initial educational PYC balance:"
+        )
+
         print(
             f"{INITIAL_BALANCE} {COIN_NAME}"
         )
 
         print()
+
+        print(
+            "NOTE: This PYC is simulated and has"
+        )
+
+        print(
+            "no monetary or financial value."
+        )
+
+        print()
+
         print(
             "IMPORTANT: Keep your password safe."
         )
@@ -247,6 +366,7 @@ class PYCApplication:
     def logout(self):
 
         self.current_user = None
+
         self.login_password = None
 
         print(
@@ -289,6 +409,16 @@ class PYCApplication:
             f"{balance:.2f} PYC",
         )
 
+        print()
+
+        print(
+            "⚠ PYC is an educational cryptocurrency"
+        )
+
+        print(
+            "and has no real-world monetary value."
+        )
+
     # =====================================================
     # Receive
     # =====================================================
@@ -301,6 +431,7 @@ class PYCApplication:
         print("=" * 60)
 
         print()
+
         print(
             "Give this address to the sender:"
         )
@@ -317,6 +448,16 @@ class PYCApplication:
             "Anyone sending PYC to this address"
             " will be credited after the transaction"
             " is verified and mined."
+        )
+
+        print()
+
+        print(
+            "⚠ Educational system:"
+        )
+
+        print(
+            "PYC has no real-world monetary value."
         )
 
     # =====================================================
@@ -344,6 +485,7 @@ class PYCApplication:
         if not user:
 
             print()
+
             print(
                 "No local account found for this address."
             )
@@ -357,7 +499,11 @@ class PYCApplication:
         )
 
         print()
-        print("✓ Wallet exists")
+
+        print(
+            "✓ Wallet exists"
+        )
+
         print(
             "Username:",
             user["username"],
@@ -384,6 +530,18 @@ class PYCApplication:
         print("SEND PYC")
         print("=" * 60)
 
+        print()
+
+        print(
+            "⚠ PYC is an educational cryptocurrency."
+        )
+
+        print(
+            "It has no real-world monetary value."
+        )
+
+        print()
+
         sender = (
             self.current_user["address"]
         )
@@ -408,6 +566,7 @@ class PYCApplication:
         if not receiver_user:
 
             print()
+
             print(
                 "Receiver wallet was not found."
             )
@@ -469,6 +628,7 @@ class PYCApplication:
         )
 
         print()
+
         print(
             f"Available balance: "
             f"{balance:.2f} PYC"
@@ -477,6 +637,7 @@ class PYCApplication:
         if amount > balance:
 
             print()
+
             print(
                 "✗ Transaction rejected."
             )
@@ -573,6 +734,7 @@ class PYCApplication:
         )
 
         print()
+
         print(
             "Verifying transaction..."
         )
@@ -602,6 +764,7 @@ class PYCApplication:
         # -------------------------------------------------
 
         print()
+
         print(
             "Mining transaction..."
         )
@@ -617,6 +780,7 @@ class PYCApplication:
         except ValueError as error:
 
             print()
+
             print(
                 "✗ Transaction rejected:"
             )
@@ -643,6 +807,7 @@ class PYCApplication:
         # -------------------------------------------------
 
         print()
+
         print("=" * 60)
         print("✓ PAYMENT SUCCESSFUL")
         print("=" * 60)
@@ -680,6 +845,12 @@ class PYCApplication:
         print(
             "New balance:",
             f"{self.blockchain.get_balance(sender):.2f} PYC",
+        )
+
+        print()
+
+        print(
+            "⚠ Reminder: PYC has no real-world monetary value."
         )
 
     # =====================================================
@@ -775,6 +946,7 @@ class PYCApplication:
         )
 
         print()
+
         print(
             "✓ Invoice created."
         )
@@ -787,6 +959,16 @@ class PYCApplication:
         print(
             "Invoice file:",
             filename,
+        )
+
+        print()
+
+        print(
+            "⚠ This invoice uses simulated PYC"
+        )
+
+        print(
+            "for educational purposes only."
         )
 
     # =====================================================
@@ -819,6 +1001,7 @@ class PYCApplication:
             return
 
         print()
+
         print(
             "Invoice ID:",
             invoice["invoice_id"],
@@ -915,6 +1098,7 @@ class PYCApplication:
             )
 
             print()
+
             print("-" * 60)
 
             print(
@@ -1010,6 +1194,7 @@ class PYCApplication:
         ):
 
             print()
+
             print("-" * 60)
 
             print(
@@ -1121,12 +1306,33 @@ class PYCApplication:
 
     def run(self):
 
+        # -------------------------------------------------
+        # Educational warning
+        # -------------------------------------------------
+
+        self.show_warning()
+
+        # -------------------------------------------------
+        # Application header
+        # -------------------------------------------------
+
         print()
         print("=" * 60)
         print("              PYC BLOCKCHAIN")
         print("=" * 60)
         print("        Educational Cryptocurrency")
         print("=" * 60)
+
+        print()
+        print(
+            "⚠ EDUCATIONAL USE ONLY"
+        )
+
+        print(
+            "PYC has no real-world monetary value."
+        )
+
+        print()
 
         while True:
 
@@ -1157,6 +1363,16 @@ class PYCApplication:
 
             elif choice == "0":
 
+                print()
+
+                print(
+                    "Thank you for using PYC Blockchain."
+                )
+
+                print(
+                    "Educational use only."
+                )
+
                 print(
                     "Goodbye."
                 )
@@ -1169,6 +1385,10 @@ class PYCApplication:
                     "Invalid option."
                 )
 
+
+# =========================================================
+# Application Entry Point
+# =========================================================
 
 if __name__ == "__main__":
 
