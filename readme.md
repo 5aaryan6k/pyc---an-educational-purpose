@@ -1,4 +1,3 @@
-
 # PYC Blockchain - Educational Cryptocurrency System
 
 **EDUCATIONAL USE ONLY**
