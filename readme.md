@@ -1,75 +1,93 @@
-# 🪙 PYC Blockchain - Educational Cryptocurrency System
+Yes. Below is the entire README as plain Markdown text, with no writing-block wrapper, so you can copy everything directly into `README.md`.
 
-> ⚠️ **EDUCATIONAL USE ONLY**
->
-> **PYC Blockchain is an educational and research project created to demonstrate blockchain, cryptocurrency, cryptography, digital signatures, wallets, transactions, and Proof-of-Work concepts.**
->
-> PYC is **not a real cryptocurrency and has no monetary value**. This software is not intended for real financial transactions, production cryptocurrency systems, or the storage of real funds or sensitive financial information.
->
-> **Use this project only for educational, development, testing, and demonstration purposes.**
+````markdown
+# PYC Blockchain - Educational Cryptocurrency System
 
+> EDUCATIONAL USE ONLY
 
-A complete **Python-based educational cryptocurrency and blockchain system** with wallets, digital signatures, transactions, Proof-of-Work mining, balance verification, invoices, SQLite persistence, and a command-line interface.
+> PYC Blockchain is an educational and research project created to demonstrate blockchain, cryptocurrency, cryptography, digital signatures, wallets, transactions, and Proof-of-Work concepts.
 
-> **PYC** is an educational cryptocurrency created to demonstrate how blockchain-based digital currency systems work using Python.
+> PYC is not a real cryptocurrency and has no monetary value. This software is not intended for real financial transactions, production cryptocurrency systems, or the storage of real funds or sensitive financial information.
+
+> Use this project only for educational, development, testing, and demonstration purposes.
+
+A complete Python-based educational cryptocurrency and blockchain system with wallets, digital signatures, transactions, Proof-of-Work mining, balance verification, invoices, SQLite persistence, and a command-line interface.
+
+PYC is an educational cryptocurrency created to demonstrate how blockchain-based digital currency systems work using Python.
 
 ---
 
 ## Table of Contents
 
-* [About the Project](#-about-the-project)
-* [Project Objectives](#-project-objectives)
-* [Features](#-features)
-* [Technology Stack](#-technology-stack)
-* [Project Architecture](#-project-architecture)
-* [Requirements](#-requirements)
-* [Installation](#-installation)
-* [Running the Application](#-running-the-application)
-* [First-Time Setup](#-first-time-setup)
-* [CLI Menu](#-cli-menu)
-* [Wallet System](#-wallet-system)
-* [Sending PYC](#-sending-pyc)
-* [Receiving PYC](#-receiving-pyc)
-* [Transaction Verification](#-transaction-verification)
-* [Mining](#-mining)
-* [Proof of Work](#-proof-of-work)
-* [Invoices](#-invoices)
-* [Blockchain Verification](#-blockchain-verification)
-* [Blockchain Explorer](#-blockchain-explorer)
-* [Database](#-database)
-* [Security](#-security)
-* [Project Structure](#-project-structure)
-* [Configuration](#-configuration)
-* [Useful Commands](#-useful-commands)
-* [Troubleshooting](#-troubleshooting)
-* [Limitations](#-limitations)
-* [Future Improvements](#-future-improvements)
-* [Educational Purpose](#-educational-purpose)
-* [License](#-license)
+- [About the Project](#about-the-project)
+- [Project Objectives](#project-objectives)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Architecture](#project-architecture)
+- [Project Structure](#project-structure)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [First-Time Setup](#first-time-setup)
+- [CLI Menu](#cli-menu)
+- [Wallet System](#wallet-system)
+- [Checking Your Balance](#checking-your-balance)
+- [Sending PYC](#sending-pyc)
+- [Receiving PYC](#receiving-pyc)
+- [Transaction Verification](#transaction-verification)
+- [Mining](#mining)
+- [Proof of Work](#proof-of-work)
+- [Invoice System](#invoice-system)
+- [Invoice Files](#invoice-files)
+- [Invoice Payment](#invoice-payment)
+- [Transaction History](#transaction-history)
+- [Blockchain Verification](#blockchain-verification)
+- [Blockchain Explorer](#blockchain-explorer)
+- [Database](#database)
+- [Security](#security)
+- [Configuration](#configuration)
+- [Development Setup](#development-setup)
+- [Deactivating the Virtual Environment](#deactivating-the-virtual-environment)
+- [Activating the Environment Again](#activating-the-environment-again)
+- [Removing the Virtual Environment](#removing-the-virtual-environment)
+- [Useful Commands](#useful-commands)
+- [Troubleshooting](#troubleshooting)
+- [Limitations](#limitations)
+- [Future Improvements](#future-improvements)
+- [Educational Purpose](#educational-purpose)
+- [Example Transaction Flow](#example-transaction-flow)
+- [Core Blockchain Concept](#core-blockchain-concept)
+- [Dependencies](#dependencies)
+- [Example requirements.txt](#example-requirementstxt)
+- [Typical Daily Workflow](#typical-daily-workflow)
+- [Disclaimer](#disclaimer)
+- [License](#license)
+- [Author](#author)
+- [Project Status](#project-status)
 
 ---
 
 # About the Project
 
-PYC Blockchain is a **local, single-node blockchain cryptocurrency prototype** developed in Python.
+PYC Blockchain is a local, single-node blockchain cryptocurrency prototype developed in Python.
 
 The system demonstrates the fundamental components required for a cryptocurrency:
 
-* Blockchain
-* Blocks
-* Transactions
-* Wallets
-* Public/private key cryptography
-* Digital signatures
-* Proof-of-Work
-* Mining
-* Balance calculation
-* Transaction verification
-* Invoice generation
-* Persistent storage
-* Command-line interaction
+- Blockchain
+- Blocks
+- Transactions
+- Wallets
+- Public/private key cryptography
+- Digital signatures
+- Proof-of-Work
+- Mining
+- Balance calculation
+- Transaction verification
+- Invoice generation
+- Persistent storage
+- Command-line interaction
 
-The project is designed primarily for **learning, experimentation, coursework, demonstrations, and understanding blockchain architecture**.
+The project is designed primarily for learning, experimentation, coursework, demonstrations, and understanding blockchain architecture.
 
 ---
 
@@ -96,20 +114,20 @@ The main objectives of PYC Blockchain are to demonstrate:
 
 ## User Authentication
 
-* User registration
-* Login
-* Logout
-* Password hashing
-* Password-based private-key encryption
+- User registration
+- Login
+- Logout
+- Password hashing
+- Password-based private-key encryption
 
 ## Wallet
 
 Each registered user receives a PYC wallet containing:
 
-* Wallet address
-* Public key
-* Encrypted private key
-* Wallet balance
+- Wallet address
+- Public key
+- Encrypted private key
+- Wallet balance
 
 Wallet addresses are derived from the wallet's public key.
 
@@ -117,22 +135,22 @@ Wallet addresses are derived from the wallet's public key.
 
 Users can:
 
-* Send PYC
-* Specify recipient wallet
-* Specify transaction amount
-* Digitally sign transactions
-* Verify transactions
-* View transaction history
+- Send PYC
+- Specify recipient wallet
+- Specify transaction amount
+- Digitally sign transactions
+- Verify transactions
+- View transaction history
 
 ## Transaction Security
 
 Transactions use:
 
-* Ed25519 digital signatures
-* SHA-256 hashing
-* Public/private key cryptography
-* Sender address verification
-* Balance verification
+- Ed25519 digital signatures
+- SHA-256 hashing
+- Public/private key cryptography
+- Sender address verification
+- Balance verification
 
 ## Mining
 
@@ -144,7 +162,7 @@ The default mining difficulty requires the block hash to begin with:
 
 ```text
 0000
-```
+````
 
 ## Invoices
 
@@ -208,26 +226,26 @@ The project is divided into several modules.
 
 ```text
 User
- │
- ▼
+ |
+ v
 CLI (main.py)
- │
- ├── Authentication
- │
- ├── Wallet
- │
- ├── Transactions
- │
- ├── Invoices
- │
- └── Blockchain
-        │
-        ├── Block
-        ├── Proof-of-Work
-        ├── Transaction Verification
-        └── Chain Verification
-                 │
-                 ▼
+ |
+ +-- Authentication
+ |
+ +-- Wallet
+ |
+ +-- Transactions
+ |
+ +-- Invoices
+ |
+ +-- Blockchain
+         |
+         +-- Block
+         +-- Proof-of-Work
+         +-- Transaction Verification
+         +-- Chain Verification
+                 |
+                 v
               SQLite
 ```
 
@@ -237,36 +255,36 @@ CLI (main.py)
 
 ```text
 pycproject/
-│
-├── main.py
-├── config.py
-├── requirements.txt
-├── README.md
-│
-├── core/
-│   ├── __init__.py
-│   ├── crypto.py
-│   ├── wallet.py
-│   ├── transaction.py
-│   ├── block.py
-│   └── blockchain.py
-│
-├── database/
-│   ├── __init__.py
-│   └── database.py
-│
-├── invoice/
-│   ├── __init__.py
-│   └── invoice.py
-│
-├── invoices/
-│
-└── data/
+|
++-- main.py
++-- config.py
++-- requirements.txt
++-- README.md
+|
++-- core/
+|   +-- __init__.py
+|   +-- crypto.py
+|   +-- wallet.py
+|   +-- transaction.py
+|   +-- block.py
+|   +-- blockchain.py
+|
++-- database/
+|   +-- __init__.py
+|   +-- database.py
+|
++-- invoice/
+|   +-- __init__.py
+|   +-- invoice.py
+|
++-- invoices/
+|
++-- data/
 ```
 
-### Core modules
+## Core Modules
 
-#### `core/crypto.py`
+### `core/crypto.py`
 
 Handles cryptographic functionality:
 
@@ -274,9 +292,9 @@ Handles cryptographic functionality:
 * Digital signatures
 * Signature verification
 * Password hashing
-* Private-key encryption/decryption
+* Private-key encryption and decryption
 
-#### `core/wallet.py`
+### `core/wallet.py`
 
 Handles:
 
@@ -285,7 +303,7 @@ Handles:
 * Public/private keys
 * Private-key protection
 
-#### `core/transaction.py`
+### `core/transaction.py`
 
 Handles:
 
@@ -294,7 +312,7 @@ Handles:
 * Transaction validation
 * Transaction IDs
 
-#### `core/block.py`
+### `core/block.py`
 
 Handles:
 
@@ -304,7 +322,7 @@ Handles:
 * Timestamp
 * Proof-of-Work
 
-#### `core/blockchain.py`
+### `core/blockchain.py`
 
 Handles:
 
@@ -315,15 +333,15 @@ Handles:
 * Balance calculation
 * Chain verification
 
-#### `database/database.py`
+### `database/database.py`
 
 Handles SQLite persistence.
 
-#### `invoice/invoice.py`
+### `invoice/invoice.py`
 
 Handles invoice generation and invoice files.
 
-#### `main.py`
+### `main.py`
 
 Provides the interactive command-line interface.
 
@@ -360,7 +378,7 @@ python -m pip --version
 
 # Installation
 
-## Step 1 — Clone or download the project
+## Step 1 - Clone or Download the Project
 
 If using Git:
 
@@ -378,7 +396,7 @@ Or simply open the project folder in VS Code.
 
 ---
 
-# Step 2 — Create a Virtual Environment
+# Step 2 - Create a Virtual Environment
 
 Creating a virtual environment keeps project dependencies isolated.
 
@@ -390,9 +408,9 @@ python -m venv venv
 
 ---
 
-# ▶Step 3 — Activate the Virtual Environment
+# Step 3 - Activate the Virtual Environment
 
-### Windows PowerShell
+## Windows PowerShell
 
 ```powershell
 .\venv\Scripts\Activate.ps1
@@ -404,7 +422,7 @@ After activation, you should see:
 (venv) PS A:\projects\FYP IDEAS\PyC\pycproject>
 ```
 
-### Windows CMD
+## Windows CMD
 
 ```cmd
 venv\Scripts\activate
@@ -412,7 +430,7 @@ venv\Scripts\activate
 
 ---
 
-# Step 4 — Install Dependencies
+# Step 4 - Install Dependencies
 
 Install all required packages:
 
@@ -481,8 +499,6 @@ Password
 
 The system creates a wallet for the new user.
 
----
-
 ## 2. Login
 
 Choose:
@@ -548,7 +564,7 @@ PYC7a9f4b8e21c...
 
 The wallet address is derived from the public key.
 
-The private key is **not stored as plain text**.
+The private key is not stored as plain text.
 
 It is encrypted using a password-derived encryption key.
 
@@ -568,9 +584,11 @@ Example:
 
 ```text
 Wallet:
+
 PYC7a9f4b8e21c...
 
 Balance:
+
 100.00 PYC
 ```
 
@@ -631,7 +649,7 @@ PYC7a9f4b8e21c...
 Give this address to the sender.
 ```
 
-The receiver does **not** manually create a receiving transaction.
+The receiver does not manually create a receiving transaction.
 
 The sender creates the transaction using the receiver's wallet address.
 
@@ -653,23 +671,23 @@ Signature
 
 Before a transaction is accepted, the system verifies:
 
-### 1. Sender identity
+## 1. Sender Identity
 
 The public key must correspond to the sender wallet.
 
-### 2. Digital signature
+## 2. Digital Signature
 
 The signature must be valid.
 
-### 3. Transaction amount
+## 3. Transaction Amount
 
 The amount must be positive.
 
-### 4. Balance
+## 4. Balance
 
 The sender must have sufficient PYC.
 
-### 5. Duplicate transaction
+## 5. Duplicate Transaction
 
 The transaction must not already exist.
 
@@ -685,12 +703,15 @@ For example:
 
 ```text
 Nonce: 0
+
 Hash: a8f3...
 
 Nonce: 1
+
 Hash: 93bc...
 
 Nonce: 2
+
 Hash: 0000...
 
 Valid block found!
@@ -700,7 +721,7 @@ The block is then added to the blockchain.
 
 ---
 
-# Proof-of-Work
+# Proof of Work
 
 PYC uses a simple Proof-of-Work mechanism.
 
@@ -750,7 +771,9 @@ Example:
 
 ```text
 Customer: PYCabc123...
+
 Amount: 25.00
+
 Description: Website Development
 ```
 
@@ -760,6 +783,7 @@ Example:
 
 ```text
 Invoice ID:
+
 INV-20260903-001
 ```
 
@@ -779,9 +803,10 @@ Example:
 
 ```text
 invoices/
-├── INV-20260903-001.txt
-├── INV-20260903-002.txt
-└── INV-20260903-003.txt
+
++-- INV-20260903-001.txt
++-- INV-20260903-002.txt
++-- INV-20260903-003.txt
 ```
 
 ---
@@ -794,20 +819,20 @@ A typical flow is:
 
 ```text
 Merchant
-   │
-   │ Creates Invoice
-   ▼
+   |
+   | Creates Invoice
+   v
 Invoice
-   │
-   │ Customer receives invoice
-   ▼
+   |
+   | Customer receives invoice
+   v
 Customer
-   │
-   │ Sends PYC
-   ▼
+   |
+   | Sends PYC
+   v
 Blockchain Transaction
-   │
-   ▼
+   |
+   v
 Invoice marked PAID
 ```
 
@@ -827,9 +852,13 @@ Example:
 
 ```text
 Transaction ID: 8f29...
+
 From: PYCabc...
+
 To: PYCxyz...
+
 Amount: 10.00 PYC
+
 Timestamp: 2026-09-03 17:30
 ```
 
@@ -889,20 +918,27 @@ Example:
 
 ```text
 Block #3
+
 -------------------------------
+
 Hash:
+
 0000abc123...
 
 Previous Hash:
+
 0000def456...
 
 Nonce:
+
 18723
 
 Timestamp:
+
 2026-09-03 ...
 
 Transactions:
+
 2
 ```
 
@@ -946,8 +982,6 @@ PBKDF2-HMAC-SHA256
 
 with a unique salt.
 
----
-
 ## Private-Key Encryption
 
 Wallet private keys are encrypted using:
@@ -958,8 +992,6 @@ AES-GCM
 
 The encryption key is derived from the user's password.
 
----
-
 ## Digital Signatures
 
 Transactions are signed using:
@@ -969,8 +1001,6 @@ Ed25519
 ```
 
 The receiver and blockchain system can verify that the transaction was authorized by the holder of the corresponding private key.
-
----
 
 ## Hashing
 
@@ -1070,7 +1100,7 @@ to:
 PS A:\projects\FYP IDEAS\PyC\pycproject>
 ```
 
-The virtual environment is **not deleted**.
+The virtual environment is not deleted.
 
 ---
 
@@ -1130,7 +1160,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-# 🛠️ Useful Commands
+# Useful Commands
 
 ## Check Python
 
@@ -1144,7 +1174,7 @@ python --version
 python -m pip --version
 ```
 
-## Check active Python executable
+## Check Active Python Executable
 
 ```powershell
 python -c "import sys; print(sys.executable)"
@@ -1156,25 +1186,25 @@ The result should point to your virtual environment:
 ...\pycproject\venv\Scripts\python.exe
 ```
 
-## Install dependencies
+## Install Dependencies
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-## Install cryptography manually
+## Install Cryptography Manually
 
 ```powershell
 python -m pip install cryptography
 ```
 
-## Check cryptography
+## Check Cryptography
 
 ```powershell
 python -c "import cryptography; print(cryptography.__version__)"
 ```
 
-## Run application
+## Run Application
 
 ```powershell
 python main.py
@@ -1206,7 +1236,7 @@ python -c "import cryptography; print('Cryptography OK')"
 
 ---
 
-## Python is not recognized
+## Python Is Not Recognized
 
 Check:
 
@@ -1218,7 +1248,7 @@ If Python is not installed, install Python and ensure the Python executable is a
 
 ---
 
-## Virtual environment does not activate
+## Virtual Environment Does Not Activate
 
 Try:
 
@@ -1236,7 +1266,7 @@ For development environments, the execution policy may need to permit locally cr
 
 ---
 
-## Wrong pip environment
+## Wrong pip Environment
 
 Run:
 
@@ -1254,7 +1284,7 @@ Both should point to the same virtual environment.
 
 ---
 
-## Mining takes too long
+## Mining Takes Too Long
 
 Reduce the difficulty in:
 
@@ -1280,9 +1310,9 @@ Higher difficulty means more Proof-of-Work calculations.
 
 # Limitations
 
-This project is intentionally an **educational blockchain prototype**.
+This project is intentionally an educational blockchain prototype.
 
-It is **not a production cryptocurrency**.
+It is not a production cryptocurrency.
 
 The current implementation does not provide:
 
@@ -1312,12 +1342,11 @@ Possible future versions could introduce:
 Allow multiple PYC nodes to communicate:
 
 ```text
-Node A ←→ Node B
-  ↕         ↕
-Node C ←→ Node D
+Node A <--> Node B
+  |           |
+  v           v
+Node C <--> Node D
 ```
-
----
 
 ## Distributed Consensus
 
@@ -1329,8 +1358,6 @@ Possible approaches:
 * Proof-of-Stake
 * Proof-of-Authority
 
----
-
 ## Network Synchronization
 
 Nodes could automatically:
@@ -1341,8 +1368,6 @@ Nodes could automatically:
 * Synchronize chains
 * Resolve forks
 
----
-
 ## Wallet Backup
 
 Add:
@@ -1352,8 +1377,6 @@ Add:
 * Recovery phrase
 * Encrypted wallet backup
 
----
-
 ## Web Interface
 
 Build a frontend using:
@@ -1361,8 +1384,6 @@ Build a frontend using:
 * React
 * Tailwind CSS
 * REST API / FastAPI
-
----
 
 ## Blockchain Dashboard
 
@@ -1374,8 +1395,6 @@ Add:
 * Mining statistics
 * Network statistics
 
----
-
 ## Advanced Invoices
 
 Add:
@@ -1386,8 +1405,6 @@ Add:
 * Invoice expiration
 * Automatic payment detection
 * Merchant dashboard
-
----
 
 ## Additional Security
 
@@ -1403,7 +1420,7 @@ Future versions could implement:
 
 ---
 
-# 🎓 Educational Purpose
+# Educational Purpose
 
 This project is intended for educational use.
 
@@ -1411,19 +1428,26 @@ It demonstrates the relationship between:
 
 ```text
 Cryptography
-      ↓
+      |
+      v
 Wallet
-      ↓
+      |
+      v
 Transaction
-      ↓
+      |
+      v
 Digital Signature
-      ↓
+      |
+      v
 Block
-      ↓
+      |
+      v
 Proof-of-Work
-      ↓
+      |
+      v
 Blockchain
-      ↓
+      |
+      v
 Verification
 ```
 
@@ -1447,35 +1471,35 @@ A complete PYC payment can be represented as:
 
 ```text
              USER A
-               │
-               │
+                |
+                |
           Unlock Wallet
-               │
-               ▼
-        Create Transaction
-               │
-               ▼
-       Sign with Private Key
-               │
-               ▼
-       Verify Digital Signature
-               │
-               ▼
-        Check Wallet Balance
-               │
-               ▼
+                |
+                v
+       Create Transaction
+                |
+                v
+      Sign with Private Key
+                |
+                v
+      Verify Digital Signature
+                |
+                v
+       Check Wallet Balance
+                |
+                v
           Create Block
-               │
-               ▼
-        Proof-of-Work Mining
-               │
-               ▼
-         Add Block to Chain
-               │
-               ▼
+                |
+                v
+       Proof-of-Work Mining
+                |
+                v
+        Add Block to Chain
+                |
+                v
              USER B
-               │
-               ▼
+                |
+                v
           Receives PYC
 ```
 
@@ -1486,28 +1510,28 @@ A complete PYC payment can be represented as:
 Each block contains a reference to the previous block.
 
 ```text
-┌───────────────┐
-│   Genesis     │
-│   Block #0    │
-└───────┬───────┘
-        │
-        ▼
-┌───────────────┐
-│   Block #1    │
-│ Prev Hash ────┼────► Genesis Hash
-└───────┬───────┘
-        │
-        ▼
-┌───────────────┐
-│   Block #2    │
-│ Prev Hash ────┼────► Block #1 Hash
-└───────┬───────┘
-        │
-        ▼
-┌───────────────┐
-│   Block #3    │
-│ Prev Hash ────┼────► Block #2 Hash
-└───────────────┘
++---------------+
+|    Genesis    |
+|   Block #0    |
++-------+-------+
+        |
+        v
++---------------+
+|   Block #1    |
+| Prev Hash ----+----> Genesis Hash
++-------+-------+
+        |
+        v
++---------------+
+|   Block #2    |
+| Prev Hash ----+----> Block #1 Hash
++-------+-------+
+        |
+        v
++---------------+
+|   Block #3    |
+| Prev Hash ----+----> Block #2 Hash
++---------------+
 ```
 
 Changing an earlier block changes its hash and breaks the chain relationship.
@@ -1530,7 +1554,7 @@ python -m pip install -r requirements.txt
 
 ---
 
-# Example `requirements.txt`
+# Example requirements.txt
 
 The project currently uses:
 
@@ -1554,7 +1578,7 @@ Activate the environment:
 .\venv\Scripts\Activate.ps1
 ```
 
-Install/update dependencies if required:
+Install or update dependencies if required:
 
 ```powershell
 python -m pip install -r requirements.txt
@@ -1596,13 +1620,13 @@ If this project is used in an academic submission, clearly identify the original
 
 # Author
 
-**Aaryan Koirala**
+Aaryan Koirala
 
-PYC Blockchain — Educational Cryptocurrency & Blockchain System
+PYC Blockchain - Educational Cryptocurrency & Blockchain System
 
 ---
 
-##  Project Status
+# Project Status
 
 ```text
 Version: 1.0
@@ -1616,5 +1640,9 @@ Database: SQLite
 
 ---
 
-**PYC — Learn Blockchain by Building One.** 🪙
-# pyc---an-educational-purpose
+PYC - Learn Blockchain by Building One.
+
+# pyc-an-educational-purpose
+
+```
+```
