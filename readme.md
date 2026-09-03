@@ -1,4 +1,13 @@
-# 🪙 PYC Blockchain — Educational Cryptocurrency System
+# 🪙 PYC Blockchain - Educational Cryptocurrency System
+
+> ⚠️ **EDUCATIONAL USE ONLY**
+>
+> **PYC Blockchain is an educational and research project created to demonstrate blockchain, cryptocurrency, cryptography, digital signatures, wallets, transactions, and Proof-of-Work concepts.**
+>
+> PYC is **not a real cryptocurrency and has no monetary value**. This software is not intended for real financial transactions, production cryptocurrency systems, or the storage of real funds or sensitive financial information.
+>
+> **Use this project only for educational, development, testing, and demonstration purposes.**
+
 
 A complete **Python-based educational cryptocurrency and blockchain system** with wallets, digital signatures, transactions, Proof-of-Work mining, balance verification, invoices, SQLite persistence, and a command-line interface.
 
